@@ -1,0 +1,30 @@
+/* Event */
+		.event{
+			/* border: 3px solid green; */
+			width: 80%;
+			margin-top: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 150px;
+			background-color: rgba(255, 255, 255, 0.1);
+
+		}
+		.event_div{
+			/* border: 3px solid yellow; */
+			height: 100%;
+			padding: 20px;
+			width: 25%;
+			float: left;
+		}
+		.event_div_head{
+			font-size: 20px; line-height: 20px; text-align: center;
+		}
+		.event_div_date{
+			font-size: 30px; line-height: 35px; text-align: center; margin-top: -50px;
+		}
+		.event_div_loc{
+			font-size: 50px; line-height: 	50px; text-align: center; margin-top: -45px;
+		}
+		.event_div_tsold{
+			font-size: 60px; line-height: 50px; text-align: center; margin-top: -45px;
+		}
