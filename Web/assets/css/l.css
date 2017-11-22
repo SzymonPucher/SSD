@@ -11,7 +11,7 @@
 		#signin-form input[type="text"],
 		#signin-form input[type="password"],
 		#signin-form input[type="email"] {
-			width: 18em;
+			width: 300px;
 		}
 
 		#signin-form > * {

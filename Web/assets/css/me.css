@@ -1,7 +1,7 @@
 /* Event */
 		.event{
 			/* border: 3px solid green; */
-			width: 80%;
+			width: 1200px;
 			margin-top: 5px;
 			margin-left: auto;
 			margin-right: auto;
@@ -11,9 +11,8 @@
 		}
 		.event_div{
 			/* border: 3px solid yellow; */
-			height: 100%;
 			padding: 20px;
-			width: 25%;
+			width: 300px;
 			float: left;
 		}
 		.event_div_head{

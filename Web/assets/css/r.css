@@ -8,22 +8,16 @@
 		position: relative;
 	}
 
-		#signup-form input[type="text"],
-		#signup-form input[type="password"],
-		#signup-form input[type="email"] {
-		}
-
 		#signup-form > * {
 			margin: auto;
-    	width: 30%;
+    	width: 500px;
     	padding: 10px;
 		}
 
 		#signup-form input[type="submit"], input[type="button"] {
 			margin: auto;
-			margin: 40px 0 0 773px;
-			width: 10%;
-			padding: 0px;
+			display: block;
+			width: 150px;
 		}
 
 		@media screen and (max-width: 480px) {
