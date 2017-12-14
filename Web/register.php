@@ -18,9 +18,52 @@
 				<div><input type="email" name="email" id="email" placeholder="Email Address" /></div>
 				<div><input type="password" name="password" id="password" placeholder="Password" /></div>
 				<div><input type="password" name="rpassword" id="rpassword" placeholder="Repeat password" /></div>
-				<a href="my_events.html"><input type="button" value="Sign up" /></a>
+				<input type="submit" name="register" value="Sign up" />
 			</form>
 
+			<?php
+/* * /
+			$csv = array_map('str_getcsv', file('users.csv'));
+			$companyName = $_POST['companyName'];
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+			echo $companyName, $email, $password;
+
+
+			for($i = 1; $i < sizeOf($csv); $i = $i + 1){
+				if($companyName == $csv[$i][0] || $email == $csv[$i][1]){
+					$isUnique = 0;
+				}
+			}
+
+			//if(isset($_POST['register'])) {
+				/* * /
+				$csv_write = fopen("users.csv", "a") or die("Unable to open file!");
+				/* */
+
+				/* * /
+				if(isset($_POST['companyName']) && isset($_POST['email']) && isset($_POST['password'] && isset($_POST['rpassword'])){
+					$line = array($companyName , $email , $password);
+					fputcsv($handle, $line);
+				}
+				/* * /
+				fclose($csv_write);
+				/* */
+			//}
+			$csv = array_map('str_getcsv', file('users.csv'));
+			$companyName = $_POST['companyName'];
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+			$isOk = true;
+			for($i = 1; $i < sizeOf($csv); $i = $i + 1){
+				if($email == $csv[$i][1] || $companyName == $csv[$i][0]){
+					$isOk = false;
+				}
+				if($isOk && $i == sizeOf($csv) - 1 && isset($_POST['companyName'])){
+					header('Location: http://ssd.srvnet.info/my_events.php');
+				}
+			}
+			?>
 
 		<!-- Footer -->
 			<footer id="footer">
